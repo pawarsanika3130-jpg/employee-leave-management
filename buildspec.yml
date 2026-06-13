@@ -5,6 +5,4 @@ phases:
     commands:
       - zip -r function.zip .
 
-      - aws lambda update-function-code \
-        --function-name LeaveManagementFunction \
-        --zip-file fileb://function.zip
+      - aws lambda update-function-code --function-name LeaveManagementFunction --zip-file fileb://function.zip
